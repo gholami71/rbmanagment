@@ -54,7 +54,8 @@ html, body, #root{
 }
 .dashboard{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    height: 100%;
 
 
 }
@@ -72,5 +73,6 @@ html, body, #root{
         font-size: 15pt;
         color: #fff;
         margin:10px 5px;
+        cursor: pointer;
     }
 }
