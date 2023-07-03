@@ -5,6 +5,7 @@
     src: url('../../public/font/Vazir-Medium-FD.woff') format('woff');
     src: url('../../public/font/Vazir-Medium-FD.woff2') format('woff2');
 }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -21,7 +22,6 @@ html, body, #root{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .login{
@@ -39,9 +39,8 @@ html, body, #root{
         height: 40px;
         border: 0px;
         border-radius: 5px
-        
-        
     }
+    
     button{
         width: 100px;
         height: 40px;

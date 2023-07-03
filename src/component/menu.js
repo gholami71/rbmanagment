@@ -6,7 +6,7 @@ const Menu = () => {
     const menuList = [{name:'مدیریت تقویم',url:'calendar'},{name:'مدیریت کاربران',url:'users'},{name:'مدیریت تیکت ها',url:'ticket'}]
 
     return(
-        <div>
+        <div className="Menu">
             {
                 menuList.map(i=>{
                     return(
