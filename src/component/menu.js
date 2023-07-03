@@ -1,10 +1,18 @@
-const Menu = () => {
-    return(
+import { useNavigate } from "react-router-dom"
 
+const Menu = () => {
+    const navigate = useNavigate()
+    const menuList = [{name:'مدیریت تقویم',url:'calendar'},{name:'مدیریت کاربران',url:'users'},{name:'مدیریت تیکت ها',url:'ticket'}]
+
+    return(
         <div>
-            <p>مدیریت تقویم</p>
-            <p>مدیریت کاربران</p>
-            <p>مدیریت تیکت ها</p>
+            {
+                menuList.map(i=>{
+                    return(
+                        <p onClick={()=>navigate(i.url)}>{i.name}</p>
+                    )
+                })
+            }
         </div>
 
     )
