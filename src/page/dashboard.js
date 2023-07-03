@@ -6,7 +6,7 @@ const Dashboard = () => {
 
     return(
         <UserContext.Provider value={key} >
-            <div>
+            <div className="dashboard">
                 <Menu/>
             </div>
         </UserContext.Provider>

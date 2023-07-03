@@ -45,3 +45,25 @@ html, body, #root{
     }
    
 }
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    h
+
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    
+    align-items: center;
+    background-color: rgb(36, 48, 114);
+    width: 200px;
+    height: 100%;
+    p{
+        font-size: 15pt;
+        color: #fff;
+        margin:10px 5px;
+    }
+}

@@ -39,4 +39,24 @@ html, body, #root {
   border: 0px;
   background-color: rgb(200, 194, 201);
   border-radius: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  align-items: center;
+  background-color: rgb(36, 48, 114);
+  width: 200px;
+  height: 100%;
+}
+.Menu p {
+  font-size: 15pt;
+  color: #fff;
+  margin: 10px 5px;
 }/*# sourceMappingURL=manage.css.map */

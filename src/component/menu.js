@@ -1,7 +1,7 @@
 const Menu = () => {
     return(
 
-        <div>
+        <div className="Menu">
             <p>مدیریت تقویم</p>
             <p>مدیریت کاربران</p>
             <p>مدیریت تیکت ها</p>
