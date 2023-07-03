@@ -10,7 +10,7 @@ const Menu = () => {
             {
                 menuList.map(i=>{
                     return(
-                        <p onClick={()=>navigate(i.url)}>{i.name}</p>
+                        <p key={i.url} onClick={()=>navigate(i.url)}>{i.name}</p>
                     )
                 })
             }
