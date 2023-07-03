@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "vazirMedium";
+  src: url("../../public/font/Vazir-Medium-FD.eot") format("eot");
+  src: url("../../public/font/Vazir-Medium-FD.ttf") format("ttf");
+  src: url("../../public/font/Vazir-Medium-FD.woff") format("woff");
+  src: url("../../public/font/Vazir-Medium-FD.woff2") format("woff2");
+}
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "vazirMedium";
 }
 
 html, body, #root {
