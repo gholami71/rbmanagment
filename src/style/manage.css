@@ -69,4 +69,62 @@ html, body, #root {
   color: #fff;
   margin: 10px 5px;
   cursor: pointer;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.sub .tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+.sub .tools .calenderAdd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sub .tools .calenderAdd .add {
+  width: 100px;
+  height: 25px;
+  font-size: 15pt;
+  background: #8664ff;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.sub .result {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+.sub .result .date {
+  display: flex;
+  flex-direction: row;
+  border: 1px #8664ff solid;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.sub .result .date p {
+  color: #160e36;
+}
+.sub .result .date span {
+  color: #c20f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16pt;
+  margin-left: 10px;
 }/*# sourceMappingURL=manage.css.map */
