@@ -98,19 +98,20 @@ html, body, #root{
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            .add{
-                width: 100px;
-                height: 25px;
-                font-size: 15pt;
-                background: $colorB1;
-                color: #fff;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border-radius: 5px;
-            }
+
+        }
+        .add{
+            width: 100px;
+            height: 25px;
+            font-size: 15pt;
+            background: $colorB1;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
         }
     }
     .result{
@@ -118,6 +119,23 @@ html, body, #root{
         flex-direction: row-reverse;
         flex-wrap: wrap;
         padding: 20px;
+        .discount{
+            display: flex;
+            flex-direction: row-reverse;
+            border: 1px $colorB1 solid;
+            padding: 3px;
+            border-radius: 3px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            >div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 10px;
+            }
+        }
         .date{
             display: flex;
             flex-direction: row;
