@@ -46,6 +46,15 @@ const Discount = () => {
     }
 
     const DelDiscount = (id) =>{
+        axios.post(OnRun+'/management/offdiscount',{key:key,id:id})
+        .then(responose=>{
+            if (responose.data.reply) {
+                alert('غیر فعال شد')
+                get()
+            }else{
+                alert(responose.data.msg)
+            }
+        })
 
     }
 
@@ -79,7 +88,11 @@ const Discount = () => {
                                 <p>{i.count}</p>
                             </div>
                             <div>
-                                <p>{i.count}</p>
+                                <p>مصرف</p>
+                                <p>{i.use}</p>
+                            </div>
+                            <div>
+                                <p>{i.value}</p>
                                 <p>{i.type}</p>
                             </div>
                             <div>
