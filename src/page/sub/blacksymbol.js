@@ -2,9 +2,6 @@ import axios from "axios"
 import OnRun from "../../config/OnRun"
 import { useEffect, useState } from "react"
 import { getCookie } from "../../function/cookie"
-import DatePicker ,{DateObject}from "react-multi-date-picker"
-import persian from "react-date-object/calendars/persian"
-import persian_fa from "react-date-object/locales/persian_fa"
 import { IoMdAddCircleOutline } from "react-icons/io";
 import { AiOutlineDelete } from "react-icons/ai";
 
@@ -18,7 +15,7 @@ const BlackSymbol = () => {
         if (data.symbol=='') {
             alert('کد خالی بود')
         }else{
-            axios.post(OnRun+'/management/setblacksymbol',{key:key,date:date})
+            axios.post(OnRun+'/management/setblacksymbol',{key:key,data:data})
             .then(responose=>{
                 if(responose.data.reply){
                     alert('ثبت شد')
