@@ -7,7 +7,8 @@ import Dashboard from './page/dashboard';
 import Calendar from './page/sub/Calendar';
 import Ticket from './page/sub/Ticket';
 import Users from './page/sub/Users';
-
+import Discount from './page/sub/discount';
+import BlackSymbol from './page/sub/blacksymbol';
 function App() {
   return (
   
@@ -18,6 +19,8 @@ function App() {
         <Route path='calendar' element={<Calendar/>}/>
         <Route path='ticket' element={<Ticket/>}/>
         <Route path='users' element={<Users/>}/>
+        <Route path='discount' element={<Discount/>}/>
+        <Route path='blacksymbol' element={<BlackSymbol/>}/>
       </Route>
     </Routes>
   </BrowserRouter>
