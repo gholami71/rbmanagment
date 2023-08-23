@@ -37,6 +37,7 @@ const Discount = () => {
     const get = () =>{
         axios.post(OnRun+'/management/getdiscount',{key:key})
         .then(response=>{
+            console.log(response.data.df)
             if (response.data.reply) {
                 setDf(response.data.df)
             }else{
@@ -78,7 +79,7 @@ const Discount = () => {
                 {
                 df.map((i)=>{
                         return(
-                        <div className="discount" key={i}>
+                        <div className="discount" key={i.code}>
                             <div>
                                 <p>کد</p>
                                 <p>{i.code}</p>
